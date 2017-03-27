@@ -1,0 +1,18 @@
+/*Custom style-sheet*/
+body{
+  background-color: #EDECEE;
+}
+
+#image-valores{
+  float: left;
+  padding-left: 0;
+  margin-left: 0;
+  margin-top: 10px;
+  padding-right: 10px;
+}
+
+#accordion{
+  float: right;
+  padding: 10px;
+
+}
