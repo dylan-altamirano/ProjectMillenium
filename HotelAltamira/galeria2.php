@@ -10,7 +10,7 @@
                     <small>Conozca nuestras humildes instalaciones</small>
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="index.html">Inicio</a>
+                    <li><a href="index.php">Inicio</a>
                     </li>
                     <li class="active">Galería</li>
                 </ol>
@@ -70,10 +70,10 @@
             <div class="col-lg-12">
                 <ul class="pagination">
                     <li>
-                        <a href="portfolio-4-col.html">&laquo;</a>
+                        <a href="portfolio-4-col.php">&laquo;</a>
                     </li>
                     <li>
-                        <a href="portfolio-4-col.html">1</a>
+                        <a href="portfolio-4-col.php">1</a>
                     </li>
                     <li class="active">
                         <a href="#">2</a>

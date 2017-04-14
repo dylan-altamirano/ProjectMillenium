@@ -13,21 +13,21 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill" style="background-image:url('img/slides/slide_one.jpg');"></div>
+                <div class="fill" style="background-image:url('img/slides/portada.jpeg');"></div>
                 <div class="carousel-caption">
                     <h2>Increíbles paisajes</h2>
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('img/slides/slide_two.jpg');"></div>
+                <div class="fill" style="background-image:url('img/slides/comida.jpg');"></div>
                 <div class="carousel-caption">
-                    <h2>Amplia vista al mar</h2>
+                    <h2>Deliciosa comida</h2>
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('img/slides/slide_three.jpg');"></div>
+                <div class="fill" style="background-image:url('img/slides/habitacion.jpeg');"></div>
                 <div class="carousel-caption">
-                    <h2>Tour por el bosque</h2>
+                    <h2>Habitaciones de lujo</h2>
                 </div>
             </div>
         </div>
