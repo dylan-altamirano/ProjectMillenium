@@ -35,7 +35,7 @@
                 <p><i class="fa fa-phone"></i>
                     <abbr title="Phone">P</abbr>: (123) 456-7890</p>
                 <p><i class="fa fa-envelope-o"></i>
-                    <abbr title="Email">E</abbr>: <a href="mailto:name@example.com">name@example.com</a>
+                    <abbr title="Email">E</abbr>: <a href="mailto:hotelaltamiracr@gmail.com">hotelaltamiracr@gmail.com</a>
                 </p>
                 <p><i class="fa fa-clock-o"></i>
                     <abbr title="Hours">H</abbr>: Lunes - Viernes: 9:00 AM a 10:00 PM</p>
