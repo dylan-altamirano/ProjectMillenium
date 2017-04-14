@@ -9,7 +9,7 @@
                 <small>Conozca nuestras humildes instalaciones</small>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="index.html">Inicio</a>
+                <li><a href="index.php">Inicio</a>
                 </li>
                 <li class="active">Galería</li>
             </ol>

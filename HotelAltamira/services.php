@@ -8,7 +8,7 @@
                 <h1 class="page-header">Servicios
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="index.html">Inicio</a>
+                    <li><a href="index.php">Inicio</a>
                     </li>
                     <li class="active">Servicios</li>
                 </ol>

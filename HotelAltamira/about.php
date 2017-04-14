@@ -9,7 +9,7 @@
                 <h1 class="page-header">Acerca de Nosotros
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="index.html">Inicio</a>
+                    <li><a href="index.php">Inicio</a>
                     </li>
                     <li class="active">Acerca</li>
                 </ol>
