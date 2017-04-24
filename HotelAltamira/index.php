@@ -59,7 +59,7 @@
                     </div>
                     <div class="panel-body">
                         <p>Contamos con unas amplias y espaciosas instalaciones. En las cuales, podes disfrutar de muchas comodidades que te encantarán debido a nuestro entorno rústico. Habitaciones, comedores, baños, salones, spa y mucho más...</p>
-                        <a href="#" class="btn btn-info">Aprende más</a>
+                        <a href="portfolio-4-col.php" class="btn btn-info">Aprende más</a>
                     </div>
                 </div>
             </div>
