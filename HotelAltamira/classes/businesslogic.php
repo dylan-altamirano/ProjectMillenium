@@ -193,8 +193,8 @@ class reservacion
     return $this->fecha_fin;
   }
 
-  public function setUsuario(usuario $usuario){
-    $this->usuario=$usuario;
+  public function setUsuario($usuariop){
+    $this->usuario=$usuariop;
   }
 
   public function getUsuario(){
@@ -282,8 +282,8 @@ class reservacion
 
           if (($reservacion->getFechaIni() < $arrival_date) && ($reservacion->getFechaFin()<$departure_date || $reservacion->getFechaFin()>$departure_date)) {
                 if($reservacion->getFechaFin()<$arrival_date==false){
-                    echo "<hr>";
-                    echo "Booked: ".$reservacion->getId()."<hr>";
+                    //echo "<hr>";
+                    //echo "Booked: ".$reservacion->getId()."<hr>";
 
                     for($i = 0; $i<count($reservacion->getHabitaciones());$i++){
                           array_push($habitaciones, $reservacion->getHabitacion($i));
@@ -294,8 +294,8 @@ class reservacion
           }else{
               if($reservacion->getFechaIni()>=$arrival_date  && $reservacion->getFechaIni()<=$departure_date){
                   if ($reservacion->getFechaFin()<=$departure_date || $reservacion->getFechaFin()>$departure_date) {
-                      echo "<hr>";
-                      echo "Booked: ".$reservacion->getId()."<br>";
+                    //  echo "<hr>";
+                    //  echo "Booked: ".$reservacion->getId()."<br>";
                       for($i = 0; $i<count($reservacion->getHabitaciones());$i++){
                           array_push($habitaciones, $reservacion->getHabitacion($i));
                      }
@@ -318,7 +318,7 @@ class reservacion
    */
   private function available_room(){
 
-      $booked_rooms = $this->booking();
+      $booked_rooms = $this->booking();//Obtiene las habitaciones reservadas dentro del rango de fechas buscado
 
       $all_rooms = $this->array_tipo_habitaciones;
 
@@ -329,8 +329,8 @@ class reservacion
       while($bandera==false){
 
           $room = $all_rooms[array_rand($all_rooms)];
-
-          $bandera = $this->isBooked($room,$booked_rooms);
+          //Si no existe ninguna habitacion reservada entre el rango de fechas seleccionado, la cantidad de elementos del arreglo será 0, entonces la primera habitacion estará disponible
+          $bandera = (count($booked_rooms)==0)?true:$this->isBooked($room,$booked_rooms);
 
       }
 

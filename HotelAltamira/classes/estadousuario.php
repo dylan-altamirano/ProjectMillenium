@@ -7,7 +7,7 @@
     <ul class="dropdown-menu">
 
         <li>
-            <a href="#">Configurar mi cuenta</a>
+            <a href="portfolio-4-col.html">Configurar mi cuenta</a>
         </li>
         <li>
             <a href="classes/logout.php">Salir</a>

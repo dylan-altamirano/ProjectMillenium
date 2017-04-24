@@ -149,6 +149,52 @@
           //retorna la cantidad de registros que poseen ese correo, normalmente no será mayor que 1
           return $row;
       }
+
+      function select($key){
+        //Variables
+        $row;
+        $result;
+        $id;
+        $nombre;
+        $correo;
+        $pais;
+        $role;
+        $pass;
+        $activo;
+        $usuario = new usuario();
+
+        $link = conectarse();
+
+        $statement = $link->prepare("CALL sp_select_user(?)");
+
+        $statement->bind_param("s",$key);
+
+        $statement->execute();
+
+        $statement->bind_result($id,$nombre,$correo,$pais,$role,$pass,$activo); //obtiene el resultado
+
+        while ($statement->fetch()) {
+          # code...
+          //$statement->f();//si es solo uno recorre el primer registro, de lo contrario hay que recorrerlo
+            $usuario->setID($id);
+            $usuario->setNombre($nombre);
+            $usuario->setCorreo($correo);
+            $usuario->setPais($pais);
+            $usuario->setRole($role);
+            $usuario->setPassword($pass);
+            $usuario->setActivo($activo);
+        }
+
+
+        $statement->free_result();
+        $statement->close();
+
+        $link->close();
+
+        //retorna la cantidad de registros que poseen ese correo, normalmente no será mayor que 1
+        return $usuario;
+      }
+
   }
 
   class habitacion_dao{
@@ -232,9 +278,9 @@
           $estado = $reservacion->getEstado();
           //fin conjunto de variables
 
-          $statement = $link->prepare("CALL sp_update_reservacion(?,?,?,?,?,?)");
+          $statement = $link->prepare("CALL sp_update_reservacion(?,?,?,?,?)");
 
-          $statement->bind_param("ssssds",$id,$fecha_ini ,$fecha_fin ,$id_usuario ,$total ,$estado);
+          $statement->bind_param("sssds",$id,$fecha_ini ,$fecha_fin,$total ,$estado);
 
           $statement->execute();
 

@@ -34,7 +34,7 @@ $usuario_c->setPassword("almeda");
 $usuario_c->setActivo(true);
 
 /*$usuario_d= new usuario_dao();
-        
+
 $usuario_d->delete("2017006");
 */
 //$usuario_d = new usuario_dao();
@@ -123,7 +123,7 @@ $reservacion_a = new reservacion_dao();
 
 $bookings = $reservacion_a->getBookedRooms();
 
-echo "<br>";   
+echo "<br>";
 foreach ($bookings as $reservacion) {
     echo "ID ".$reservacion->getID()."<br>";
     echo "Fecha Inicio ".$reservacion->getFechaIni()."<br>";
@@ -151,41 +151,41 @@ $reservacion->get_array_all_rooms_by_type($reservacion_a->getRooms("Sencilla"));
 //
 //
 $booked = $reservacion->booking();
-    
-   //echo "Nº Reservación: ".$reservacion->getId(); 
-   echo "<hr> <br><br>";     
+
+   //echo "Nº Reservación: ".$reservacion->getId();
+   echo "<hr> <br><br>";
    echo "Booked rooms";
-   
+
    foreach($booked as $habitacion){
        echo "<br>";
        echo "Room ".$habitacion->getId();
    }
-//       
-//   
+//
+//
 //   //reservar
-//   $reservacion->reservarHabitacion();
-//   
+//   $reservacion->reservarHabitacion();<
+//
 //   $habitaciones = $reservacion->getHabitaciones();
-//   
+//
 //   //habitaciones reservadas
 //   echo "<hr> <br> Habitaciones a reservar: ";
 //   foreach($habitaciones as $hab){
 //       echo "<br>";
 //       echo "Room ".$hab->getID()." Tipo: ".$hab->getTipo();
 //   }
-//   
-//   echo "Precio total: ".$reservacion->calcularPrecio();
-//   
+//
+//   echo "Precio total: ".
+//
 //   $reservacion_b = new reservacion_dao();
-//   
+//
 //   $reservacion_b->insert($reservacion);
 //   echo "Reservacion guardada";
-//   
+//
 //   if ($reservacion->getEstado()!="Cotizado") {
 //    $reservacion_b->guardarHabitaciones($reservacion);
 //    echo "Habitaciones guardadas con exito";
 //}
-   
+
 
 ?>
 <html>

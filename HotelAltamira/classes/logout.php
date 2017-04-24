@@ -1,13 +1,11 @@
 <?php
-    session_start();
+//  require_once('classes/funciones.php');
 
-  //Verifica que la sesión exista
-  if ($_SESSION['user_name']) {
-    //si existe destruye la sesión
+  session_start();
+
+  if (isset($_SESSION['user_name'])) {
+    header('refresh:0;url=../index.php');
     session_destroy();
-
-    header('Location:../index.php'); //redirecciona a la página principal del sitio
   }
-
 
  ?>

@@ -18,7 +18,6 @@
     <link href="css/modern-business.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/signinstyles.css">
-    <link rel="stylesheet" href="css/lightbox.css">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
