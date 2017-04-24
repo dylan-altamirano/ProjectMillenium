@@ -72,7 +72,14 @@
                         <p>¿No quieres reservar todavía? No importa, acá sabemos lo importante que es para tí el administrar bien tu dinero. Por eso contamos con una variedad de servicios, entre ellos tenemos el cotizador en línea que le proveera toda
                             información posible.
                         </p>
-                        <a href="pricing.php" class="btn btn-info">Aprende más</a>
+                        <?php
+                              if (isset($_SESSION['user_name'])) {
+                                echo "<a href='pricing.php' class='btn btn-info'>Aprende más</a>";
+                              }else{
+                                echo "<a href='#' class='btn btn-info'>Aprende más</a>";
+                              }
+                         ?>
+
                     </div>
                 </div>
             </div>
@@ -86,7 +93,13 @@
                           realizar reservaciones sin complicaciones.
 
                         </p>
-                        <a href="pricing.php" class="btn btn-info">Aprende más</a>
+                        <?php
+                              if (isset($_SESSION['user_name'])) {
+                                echo "<a href='pricing.php' class='btn btn-info'>Aprende más</a>";
+                              }else{
+                                echo "<a href='#' class='btn btn-info'>Aprende más</a>";
+                              }
+                         ?>
                     </div>
                 </div>
             </div>
