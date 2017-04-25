@@ -9,6 +9,11 @@
         <li>
             <a href="portfolio-4-col.html">Configurar mi cuenta</a>
         </li>
+        <?php
+              if ($_SESSION['user_name']=="admin@altamira.com") {
+                echo "<a href='adminUsers.php' class='btn btn-info'>Administrar usuarios</a>";
+              }
+         ?>
         <li>
             <a href="classes/logout.php">Salir</a>
         </li>
