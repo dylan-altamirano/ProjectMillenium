@@ -7,11 +7,12 @@
     <ul class="dropdown-menu">
 
         <li>
-            <a href="portfolio-4-col.html">Configurar mi cuenta</a>
+            <a href="#">Configurar mi cuenta</a>
         </li>
         <?php
               if ($_SESSION['user_name']=="admin@altamira.com") {
-                echo "<a href='adminUsers.php' class='btn btn-info'>Administrar usuarios</a>";
+                echo "<li><a href='adminUsers.php' class=''>Administrar usuarios</a></li>";
+                echo "<li><a href='envioPublicidad.php' class=''>Enviar correo publicitario</a></li>";
               }
          ?>
         <li>

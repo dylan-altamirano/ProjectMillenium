@@ -195,6 +195,40 @@
         return $usuario;
       }
 
+      function select_emails(){
+        //Variables
+        $array_correos = new ArrayObject();
+        $result;
+        $correo;
+
+
+        $link = conectarse();
+
+        $statement = $link->prepare("CALL sp_select_users_correo()");
+
+        //$statement->bind_param("s",$key);
+
+        $statement->execute();
+
+        $statement->bind_result($correo); //obtiene el resultado
+
+        while ($statement->fetch()) {
+          # code...
+          //$statement->f();//si es solo uno recorre el primer registro, de lo contrario hay que recorrerlo
+          $array_correos->append($correo);
+
+        }
+
+
+        $statement->free_result();
+        $statement->close();
+
+        $link->close();
+
+        //retorna la cantidad de registros que poseen ese correo, normalmente no será mayor que 1
+        return $array_correos;
+      }
+
   }
 
   class habitacion_dao{
