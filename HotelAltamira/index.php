@@ -76,7 +76,7 @@
                               if (isset($_SESSION['user_name'])) {
                                 echo "<a href='pricing.php' class='btn btn-info'>Aprende más</a>";
                               }else{
-                                echo "<a href='#' class='btn btn-info'>Aprende más</a>";
+                                echo "<a href='#' class='btn btn-info' data-toggle='modal' data-target='#signIn'>Aprende más</a>";
                               }
                          ?>
 
@@ -97,7 +97,7 @@
                               if (isset($_SESSION['user_name'])) {
                                 echo "<a href='pricing.php' class='btn btn-info'>Aprende más</a>";
                               }else{
-                                echo "<a href='#' class='btn btn-info'>Aprende más</a>";
+                                echo "<a href='#' class='btn btn-info' data-toggle='modal' data-target='#signIn'>Aprende más</a>";
                               }
                          ?>
                     </div>
