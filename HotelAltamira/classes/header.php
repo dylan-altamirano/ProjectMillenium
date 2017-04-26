@@ -45,9 +45,6 @@
                     <li>
                         <a href="about.php">Acerca</a>
                     </li>
-                    <li>
-                        <a href="services.php">Servicios</a>
-                    </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Galería <b class="caret"></b></a>
                         <ul class="dropdown-menu">

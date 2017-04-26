@@ -81,6 +81,7 @@ require_once('classes/DAO.php');
         </div>
 
         <div class="alert alert-info" id="recipientes" <?php echo (count($_SESSION['correos'])>0)?"":"hidden"?>>
+          <strong>Recipientes </strong>
           <?php $correos = $_SESSION['correos'];
                 foreach ($correos as $recipiente) {
                   echo $recipiente."; ";
