@@ -138,7 +138,7 @@
           										</div>
           									</div>
           								</form>
-          								<form id="register-form" action="classes/registro.php" method="post" role="form" style="display: none;">
+          								<form id="register-form" action="classes/registro.php" method="post" onsubmit="return validarRegistro();" role="form" style="display: none;">
                             <div class="form-group">
           										<input type="text" name="iduser" id="id_user" tabindex="1" class="form-control" placeholder="Identificación" value="">
           									</div>
@@ -188,3 +188,22 @@
       </div>
 
     </div> <!--FIN DEL FORMUALRIO DE LOGIN-->
+
+    <script type="text/javascript">
+
+      function validarRegistro(){
+        var id = document.getElementById('id_user').value;
+        var nombre = document.getElementById('username').value;
+        var email = document.getElementById('email').value;
+        var pass = document.getElementById('password').value;
+        var pass_con = document.getElementById('confirm-password').value;
+
+        if (id=="" || nombre =="" || email=="" || pass=="" || pass_con=="") {
+          alert('Tienes que ingresar datos válidos en el formulario');
+          return false;
+        }else{
+          return true;
+        }
+
+      }
+      </script>
