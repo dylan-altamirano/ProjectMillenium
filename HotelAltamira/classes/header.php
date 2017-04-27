@@ -144,7 +144,7 @@
           										<input type="text" name="iduser" id="id_user" tabindex="1" class="form-control" placeholder="Identificación" value="">
           									</div>
                             <div class="form-group">
-          										<input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Nombre de usuario" value="">
+          										<input type="text" name="user" id="usern" tabindex="1" class="form-control" placeholder="Nombre de usuario" value="">
           									</div>
           									<div class="form-group">
           										<input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Correo electrónico" value="">
@@ -194,7 +194,7 @@
 
       function validarRegistro(){
         var id = document.getElementById('id_user').value;
-        var nombre = document.getElementById('username').value;
+        var nombre = document.getElementById('user').value;
         var email = document.getElementById('email').value;
         var pass = document.getElementById('password').value;
         var pass_con = document.getElementById('confirm-password').value;

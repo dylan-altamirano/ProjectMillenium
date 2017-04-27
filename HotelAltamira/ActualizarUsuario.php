@@ -1,11 +1,11 @@
-<?php require_once('classes/header.php'); 
-	  require_once('classes/DAO.php');	
-	
-	$email = $_SESSION['user_name'];	
+<?php require_once('classes/header.php');
+	  require_once('classes/DAO.php');
+
+	$email = $_SESSION['user_name'];
 
 	$usuario_d = new usuario_dao();
-	
-	
+
+
   $usuario = new usuario();
   $usuario = $usuario_d->select($email);
   $nombre = $usuario->getNombre();
@@ -14,12 +14,12 @@
 <body>
 <div class="well">
 		<form id="form" action="classes/actualizacionUsuario.php" method="post" style="">
-		
+
 	<table width=500 >
 	<br>
 	<td >
 		<input class="form-control" type="text" placeholder=<?php echo $email;  ?> readonly>
-		
+
           			   <div class="form-group">
           					<input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Nombre de usuario" value=<?php echo $nombre;  ?>>
           			   </div>
@@ -54,7 +54,7 @@
          </form>
 		 </div>
 </body>
-		
+
         <!-- Footer -->
         <footer>
             <div class="row">
@@ -73,6 +73,9 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 	 <script src="js/signinfunctions.js"></script>
+
+		
+
 
 </body>
 

@@ -3,7 +3,7 @@
   require_once('DAO.php');
 
   $id = $_POST['iduser'];
-  $username = $_POST['username'];
+  $username = $_POST['user'];
   $email = $_POST['email'];
   $pais = $_POST['cbopaises'];
   $clave = $_POST['password'];

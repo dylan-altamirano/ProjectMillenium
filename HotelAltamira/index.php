@@ -152,7 +152,7 @@
                 </div>
                 <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                   <div class="panel-body">
-                   Mejorar nuestro servicio y hacer crecer nuestro hotel para que nuestros clientes salgan satisfechos 
+                   Mejorar nuestro servicio y hacer crecer nuestro hotel para que nuestros clientes salgan satisfechos
 				   </div>
                 </div>
               </div>
@@ -164,7 +164,7 @@
 
         <hr>
 
-        <!-- Call to Action Section -->
+        <!-- Call to Action Section
         <div class="well">
             <div class="row">
              <?php
@@ -177,7 +177,7 @@
 ?>
 </h1>
             </div>
-        </div>
+        </div>-->
 
         <hr>
 
