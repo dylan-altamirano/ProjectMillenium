@@ -1,5 +1,5 @@
 <?php require_once('classes/header.php');
-require_once('classes/DAO.php');
+      require_once('classes/DAO.php');
 
   //Analiza si la sesion no ha sido inicializada o si no ha habido una acción del form
   if (!isset($_SESSION['correos']) || ($_SERVER['REQUEST_METHOD'] != 'POST')) {
