@@ -12,10 +12,12 @@
 
 ?>
 <body>
+<div class="well">
 		<form id="form" action="classes/actualizacionUsuario.php" method="post" style="">
-	<table width=500 aling="center">
+		
+	<table width=500 >
 	<br>
-	<td aling="center">
+	<td >
 		<input class="form-control" type="text" placeholder=<?php echo $email;  ?> readonly>
 		
           			   <div class="form-group">
@@ -50,6 +52,7 @@
 	</td>
 	</table>
          </form>
+		 </div>
 </body>
 		
         <!-- Footer -->

@@ -109,7 +109,7 @@
         <div class="container row">
             <!--Imagen cerca del accordion element-->
             <div id="image-valores" class="col-xs-2 pull-left clearfix">
-              <img class="img-resonsive img-hover img-related thumbnail"src="img/informatives/house.jpg" alt="">
+              <img class="img-resonsive img-hover img-related thumbnail"src="img/informatives/abcde.jpeg" alt="">
 
             </div>
             <div class="panel-group col-xs-4 clearfix" id="accordion" role="tablist" aria-multiselectable="true">
@@ -139,8 +139,7 @@
                 </div>
                 <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                   <div class="panel-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                  </div>
+                    Es un antiguo Estado polinesio del siglo XIX, anexado en 1895 a Francia, por la voluntad de la última reina Teriimaevarua III y de los principales jefes del reino.En el siglo XVIII, surge un gran jefe, llamado Puni (Teihotu Matarua), quien consiguió dominar los otros clanes de la isla de Bora-Bora. Se alió a continuación con los líderes de la isla de Tahaa (ubicada entre Bora Bora y Raiatea). Con esta alianza, alcanzó a dominar las islas Raiatea, de Tahaa y de Maupiti. En 1769, cuando James Cook desembarca en Tahaa y Raiatea, las islas ya están bajo la soberanía de Puni. A la muerte de Puni, su sobrino, Tapoa I, jefe supremo de Bora-Bora, Raiatea y Tahaa, se instala en Raiatea, dejando así el poder local de Bora Bora a los caudillos May y Tefaaora, originarios de los poblados de Nunue y Anau, y adjuntos al Marae de Vaiotaha. </div>
                 </div>
               </div>
               <div class="panel panel-default">
@@ -153,8 +152,8 @@
                 </div>
                 <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                   <div class="panel-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                  </div>
+                   Mejorar nuestro servicio y hacer crecer nuestro hotel para que nuestros clientes salgan satisfechos 
+				   </div>
                 </div>
               </div>
             </div>
@@ -168,12 +167,15 @@
         <!-- Call to Action Section -->
         <div class="well">
             <div class="row">
-                <div class="col-md-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
-                </div>
-                <div class="col-md-4">
-                    <a class="btn btn-lg btn-default btn-block" href="#">Call to Action</a>
-                </div>
+             <?php
+//require_once('contador.php');
+
+ ?>
+<h1 class="col-lg-12">Contador de visitas:1
+<?php
+//echo contadorVisitas();
+?>
+</h1>
             </div>
         </div>
 

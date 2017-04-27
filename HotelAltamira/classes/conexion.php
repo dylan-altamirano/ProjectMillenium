@@ -2,7 +2,7 @@
 //Esta función se conecta a la base de datos en mysql y retorna la instancia de conexión
 function conectarse(){
 
-    $link = mysqli_connect("localhost", "sa","Ls1s2s3s5s7","db_hotel");
+    $link = mysqli_connect("localhost", "root","123456","db_hotel");
 
     //Intenta conectarse a la base datos elegida
     if (mysqli_connect_errno()) {

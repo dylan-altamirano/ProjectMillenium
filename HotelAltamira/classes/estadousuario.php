@@ -7,7 +7,7 @@
     <ul class="dropdown-menu">
 
         <li>
-            <a href="#">Configurar mi cuenta</a>
+            <a href="ActualizarUsuario.php">Configurar mi cuenta</a>
         </li>
         <?php
               if ($_SESSION['user_name']=="admin@altamira.com") {
