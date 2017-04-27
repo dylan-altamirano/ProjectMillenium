@@ -52,7 +52,10 @@ if (isset($_POST['buscar'])) {
                 if ($usuario->getCorreo()!="") {
                   require_once('classes/mostrarUsuarios.php');
                 }else{
-                  require_once('classes/no_match.php');
+                  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+                    require_once('classes/no_match.php');
+                  }
+
                 }
            ?>
 
