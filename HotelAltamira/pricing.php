@@ -19,7 +19,7 @@
         <!-- /.row -->
 
       <!--Comienzo del formulario de reservacion-->
-      <form class="" name="formularioReservacion" action="reservar.php" method="post">
+      <form class="" name="formularioReservacion" action="reservar.php" onsubmit="return validarDatos();"method="post">
 
 
         <!-- Content Row -->
@@ -141,6 +141,40 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+
+    function validarFechas(){
+
+      var date_ini =document.getElementById('fecha-inicial-id').value;
+      var date_fin = document.getElementById('fecha-final-id').value;
+
+      if (date_fin<date_ini) {
+        alert('Fechas seleccionadas no válidas');
+        return false;
+      }else{
+        return true;
+      }
+
+    }
+
+
+    function validarDatos(){
+
+      var fechas = validarFechas();
+
+      if (fechas==true) {
+
+        return true
+      }else {
+        alert('Datos inválidos, por favor elija información válida');
+        return false;
+      }
+
+
+    }
+
+    </script>
 
 </body>
 
