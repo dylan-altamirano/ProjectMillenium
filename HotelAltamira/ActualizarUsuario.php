@@ -19,7 +19,7 @@
 					<h3>Actualizar mis datos</h3>
 				</div>
 				<div class="col-md-6 col-md-offset-3">
-					<form id="form" action="classes/actualizacionUsuario.php" method="post" style="">
+					<form id="form" action="classes/actualizacionUsuario.php" method="post" onsubmit="return validarClaves();">
 
 										<div class="form-group">
 											<input class="form-control" type="text" placeholder=<?php echo $email;  ?> readonly>
@@ -81,6 +81,23 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 	 <script src="js/signinfunctions.js"></script>
+
+	 <script type="text/javascript">
+
+			function validarClaves(){
+
+					 var clave = document.getElementById('passwordA').value;
+					 var confirmacion = document.getElementById('confirm-password').value;
+
+					 if (clave != confirmacion) {
+							alert('Lo sentimos, las claves no coinciden, asegurese de entrar correctamente las claves por favor.');
+							return false;
+					 }else{
+						 return true;
+					 }
+			}
+
+	 </script>
 
 
 

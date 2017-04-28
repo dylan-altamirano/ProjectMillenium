@@ -120,6 +120,38 @@
          return ($_SESSION['user_name'])?true:false;
       }
 
+      //Metodo a utilizar para actualizar la contraseña
+      public function autenticar_por_clave($email, $password){
+
+          $result;
+          $row;
+
+          $link = conectarse();
+
+          $statement = $link->prepare("CALL sp_autenticar_usuario(?, ?)");
+
+          $statement->bind_param("ss",$email,$password);
+
+          $statement->execute();
+
+          $result = $statement->get_result(); //obtiene el resultado
+
+          $row = $result->num_rows; //si es solo uno recorre el primer registro, de lo contrario hay que recorrerlo
+
+          $statement->free_result(); //libera los objetos results
+
+          $statement->close();
+
+          $link->close();
+
+          //Se cuenta el nnúmero de registros que devuelve, si existe creará la sesión para el usuario
+            if ($row>0) {
+              return true;
+            }
+
+            return false;
+      }
+
       /**
        * Método que devuelve un valor que indica que si el correo existe en la base de datos
        */
