@@ -26,10 +26,10 @@ $user_dao = new usuario_dao();
 //Guardamos el objeto usuario en la base de datos
 if ($user_dao->insert($usuario)) {
   echo "<script>alert('Usuario registrado con exito')</script> ";
-  header('Location:../index.html');
+  header('Location:../index.php');
 }else{
   echo "<script>alert('Hubo un problema en el registro de tu cuenta. Por favor, vuelve a intertarlo.')</script> ";
-  header('Location:../index.html');
+  header('Location:../index.php');
 }
 
  ?>
