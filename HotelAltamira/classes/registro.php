@@ -23,13 +23,23 @@
 
 //crea un objeto DAO
 $user_dao = new usuario_dao();
-//Guardamos el objeto usuario en la base de datos
-if ($user_dao->insert($usuario)) {
-  echo "<script>alert('Usuario registrado con exito')</script> ";
-  header('Location:../index.php');
+
+if ($user_dao->correo_si($email)>0) {
+  header("refresh:0; url=../index.php");
+  echo "<script>alert('Al parecer ya existe un usuario con el mismo correo electrónico. Vuelve a intentarlo.')</script> ";
+
 }else{
-  echo "<script>alert('Hubo un problema en el registro de tu cuenta. Por favor, vuelve a intertarlo.')</script> ";
-  header('Location:../index.php');
+  //Guardamos el objeto usuario en la base de datos
+  if ($user_dao->insert($usuario)) {
+    header("refresh:0; url=../index.php");
+    echo "<script>alert('Usuario registrado con exito')</script> ";
+    //header('Location:../index.php');
+  }else{
+    header("refresh:0; url=../index.php");
+    echo "<script>alert('Hubo un problema en el registro de tu cuenta. Por favor, vuelve a intertarlo.')</script> ";
+    //header('Location:../index.php');
+  }
 }
+
 
  ?>

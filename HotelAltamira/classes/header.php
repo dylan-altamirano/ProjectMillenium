@@ -160,10 +160,10 @@
           									    </select>
           									</div>
           									<div class="form-group">
-          										<input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Contraseña">
+          										<input type="password" name="password" id="password-id" tabindex="2" class="form-control" placeholder="Contraseña">
           									</div>
           									<div class="form-group">
-          										<input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirmar contraseña">
+          										<input type="password" name="confirm-password" id="confirm-password-id" tabindex="2" class="form-control" placeholder="Confirmar contraseña">
           									</div>
           									<div class="form-group">
           										<div class="row">
@@ -194,10 +194,10 @@
 
       function validarRegistro(){
         var id = document.getElementById('id_user').value;
-        var nombre = document.getElementById('user').value;
+        var nombre = document.getElementById('usern').value;
         var email = document.getElementById('email').value;
-        var pass = document.getElementById('password').value;
-        var pass_con = document.getElementById('confirm-password').value;
+        var pass = document.getElementById('password-id').value;
+        var pass_con = document.getElementById('confirm-password-id').value;
 
         if (id=="" || nombre =="" || email=="" || pass=="" || pass_con=="") {
           alert('Tienes que ingresar datos válidos en el formulario');
