@@ -55,7 +55,7 @@
                       <ul class="dropdown-menu dropdown-menu-right form-control">
 
                           <li class="dropdown-item" value="Todos">
-                              <a href="#" onclick="disableFieldset();">Todos</a>
+                              <a href="envioPublicidad.php" onclick="disableFieldset();">Todos</a>
                           </li>
                           <li class="dropdown-item" value="especifico">
                               <a href="#" onclick=" enableFieldset();">Usuario especifico</a>
