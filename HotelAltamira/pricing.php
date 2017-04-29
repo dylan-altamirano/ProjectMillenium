@@ -89,9 +89,10 @@
         </div>
         <!-- /.row -->
 
+      <div class="well">
         <div class="row">
           <div class="col-md-4">
-            <div class="form-group row">
+            <div class="form-group">
                 <label for="fecha-inicial-id" class="col-2 col-form-label">Seleccione la fecha inicial</label>
                 <div class="col-10">
                   <input class="form-control" type="date" name="fecha-inicial" id="fecha-inicial-id" value=<?php echo date('Y-m-d'); ?>>
@@ -101,7 +102,7 @@
           </div>
 
           <div class="col-md-4">
-            <div class="form-group row">
+            <div class="form-group">
                 <label for="fecha-final-id" class="col-2 col-form-label">Seleccione la fecha final</label>
                 <div class="col-10">
                   <input class="form-control" type="date" name="fecha-final" id="fecha-final-id" value=<?php echo date('Y-m-d'); ?>>
@@ -110,16 +111,15 @@
 
           </div>
           <div class="col-md-4">
-            <div class="form-group">
-
-              <div class="col-10">
-                <button type="submit" name="cotizar" class="btn btn-primary">Cotizar</button>
-              </div>
+            <div class="col-10">
+                  <button type="submit" name="cotizar" class="btn btn-primary btn-lg btn-block">Cotizar</button>
             </div>
           </div>
 
 
         </div>
+      </div>
+
 
       </form> <!--Fin del formualario de reservacion-->
         <hr>

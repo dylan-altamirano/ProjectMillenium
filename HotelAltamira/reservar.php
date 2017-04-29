@@ -142,6 +142,8 @@
   require_once('classes/reservacionConfirmacion.php');
 //Fin de la confirmacion de existencia de la variable de los radio buttons
 }else{
-    echo "<script> locatiion.replace('pricing.php');</script>";
+    echo "<script> alert('Debe seleccionar un tipo de habitacion para proceder.');</script>";
+    echo "<script> location.replace('pricing.php');</script>";
+
 }
  ?>
